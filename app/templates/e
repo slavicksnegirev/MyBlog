@@ -1,0 +1,819 @@
+Running with gitlab-runner 14.2.0 (58ba2b95)
+  on Global Docker Socket (24) xpxJyeNw
+
+Preparing the "docker" executor
+00:01
+Using Docker executor with image registry.as-team.space/libs/node:14-slim.3 ...
+Using locally found image version due to "if-not-present" pull policy
+Using docker image sha256:ce314d70c36405dcca95815593c1f6304a490c2877bdabcb37735997d4443d4d for registry.as-team.space/libs/node:14-slim.3 with digest registry.as-team.space/libs/node@sha256:90430d3ef064994c9f316aa681af4d03ff033142491a2d579d3a21d80aed4452 ...
+
+Preparing environment
+00:01
+Running on runner-xpxjyenw-project-25-concurrent-0 via build-ci-1...
+
+Getting source from Git repository
+00:02
+Fetching changes with git depth set to 3...
+Reinitialized existing Git repository in /builds/oaovd/osspu/evj/front/.git/
+Checking out b593dc99 as develop...
+Removing track_diff.txt
+Skipping Git submodules setup
+
+Restoring cache
+00:22
+Checking cache for develop-11...
+Downloading cache.zip from http://192.168.0.16:9000/gitlab-runner/project/25/develop-11 
+Successfully extracted cache
+
+Downloading artifacts
+00:00
+Downloading artifacts for track configs (445186)...
+Downloading artifacts from coordinator... ok        id=445186 responseStatus=200 OK token=ocxqCaDP
+
+Executing "step_script" stage of the job script
+04:31
+Using docker image sha256:ce314d70c36405dcca95815593c1f6304a490c2877bdabcb37735997d4443d4d for registry.as-team.space/libs/node:14-slim.3 with digest registry.as-team.space/libs/node@sha256:90430d3ef064994c9f316aa681af4d03ff033142491a2d579d3a21d80aed4452 ...
+$ if [[ $IS_DEBUG_ENV == "true" ]]; then env; fi
+UI_TESTS_ON=false
+BASE_IMG_BOX=nexus.as-team.space/asplatform/main-front
+CI_PROJECT_NAMESPACE=oaovd/osspu/evj
+HELM_INGRESS_PREFIX=deploy
+GITLAB_USER_ID=516
+_NEXUS_PASSWORD=Ckj;ysq10!
+IS_DEBUG_ENV=true
+CI_RUNNER_VERSION=14.2.0
+RC_CACHE_KEY=RC
+FF_SKIP_NOOP_BUILD_STAGES=true
+DOTNET_FLAGS=-c Release /p:IsWebConfigTransformDisabled=true
+REFRESH_NPM_TRIGGER=50aa7116186f3f3fcd38cedee6628f
+CI_SERVER_NAME=GitLab
+CI_RUNNER_DESCRIPTION=Global Docker Socket (24)
+GITLAB_USER_EMAIL=perminev.ma@gazgolder.ru
+SR_ACTIONFILE_TYPE=service
+APP_OUTPUT_PATH=/builds/oaovd/osspu/evj/front/artifacts
+CI_SERVER_REVISION=2da7c857960
+FF_USE_WINDOWS_LEGACY_PROCESS_STRATEGY=true
+CI_RUNNER_EXECUTABLE_ARCH=linux/amd64
+CI_REGISTRY_USER=gitlab-ci-token
+CI_API_V4_URL=https://gitlab.as-team.space/api/v4
+CI_REGISTRY_PASSWORD=[MASKED]
+CI_RUNNER_SHORT_TOKEN=xpxJyeNw
+PY_ARGS=--debug
+SR_IS_ALERTING_TG=true
+DOCKERHUB_URL=registry.as-team.space
+CI_JOB_NAME=ng-build
+SR_PY_RELEASE_TARGET=zyfra-main
+HOSTNAME=runner-xpxjyenw-project-25-concurrent-0
+FETCH_REF=/raw?ref=master
+GITLAB_USER_LOGIN=perminev.ma
+NEXUS_NUGET_KEY=[MASKED]
+RN_RELEASE_NOTE_PATH=/app/
+FF_SKIP_DOCKER_MACHINE_PROVISION_ON_CREATION_FAILURE=true
+CI_PROJECT_NAME=front
+NODE_OPTIONS=--max_old_space_size=8048
+CI_PIPELINE_SOURCE=web
+CI_BUILD_REF_NAME=develop
+IS_DOCKER_COMPOSE_BUILD=false
+CI_JOB_STATUS=running
+HELM_EXTRA_FLAGS=
+CI_PIPELINE_ID=83033
+SCH_CONFIG=main-front.yaml
+SR_JQ_TESTS_FILTER=.["libs"][],.["tests"][]
+CI_BUILD_REF_SLUG=develop
+CI_COMMIT_REF_SLUG=develop
+CI_SERVER=yes
+RI_NODE=registry.as-team.space/libs/node:14-slim.3
+TG_PIPELINES_CHAT_ID=-1001289645832
+PY_ENV_JSON=./ci/ci-envs.json
+ROCKETCHAT_PIPELINES=AnwPRw8H9CePhHx7L/NbNcGF9zjiLAGozvyfv2EkganAP4e9uF7B2LuoKMPZibSfeA
+ROCKETCHAT_RELEASE_TAGS=sZ49YRxrJcNh7t4bG/iyyhPQyHYseTZxtCEFCfFkxM5tN8cpiwELkskQoB7C9GWSxx
+MF_PUSH_ACCESS_LVL=40
+ROCKETCHAT_RELEASE_SUCCESS=*New release main-front coming*. Uploaded to gpn-ftp ->
+FF_GITLAB_REGISTRY_HELPER_IMAGE=true
+ROCKETCHAT_RELEASE_FAIL=*RELEASE main-front FAILED*. See details below ->
+BASE_IMG=registry.as-team.space/cup/main-front
+RC_HELM_NS=release
+_TG_RELEASE_CHAT_ID=-410662388
+GL_TOKEN=[MASKED]
+YARN_VERSION=1.22.15
+CI_COMMIT_SHORT_SHA=b593dc99
+FF_CMD_DISABLE_DELAYED_ERROR_LEVEL_EXPANSION=false
+CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX=gitlab.as-team.space:443/oaovd/dependency_proxy/containers
+SERVICE_CHART_VALUE=microservice
+SR_JQ_RESTORE_FILTER=.["libs"][],.["runtimes"][],.["tests"][]
+CHART=path/to/chart
+IS_DEPLOY_REVIEW=false
+SCH_LOG_LEVEL=info
+PWD=/builds/oaovd/osspu/evj/front
+CI_RUNNER_TAGS=gl-docker-socket, gl-docker-runner
+CI_PROJECT_PATH=oaovd/osspu/evj/front
+PY_SCRIPT=./ci/scripts/docker-yaml-templator/main.py
+FF_USE_NEW_BASH_EVAL_STRATEGY=false
+SR_COMPILE_TARGET=angular
+ROCKETCAT_TOKEN=pth0SY8qXyFoT4SdvhVXAoXaTYznO0v63oZ7vCBbdw4
+TG_RELEASE_CHAT_ID=-1001321965108
+GG_NEXUS_NUGET_KEY=[MASKED]
+SR_CACHE_KEY=front-25-SR-cache
+GIT_SSL_NO_VERIFY=1
+GG_CONNECTION_STRINGS=/builds/oaovd/osspu/evj/front.tmp/GG_CONNECTION_STRINGS
+CI_SERVER_TLS_CA_FILE=/builds/oaovd/osspu/evj/front.tmp/CI_SERVER_TLS_CA_FILE
+EXTERNAL_REGISTRY=oms02-nex01.gazprom-neft.local:5000/asplatform
+JQ_BUILD_FILTER=.["libs"][],.["runtimes"][]
+FETCH_PATH=builds%2Fangular%2F
+TC_DIFF_FILE=track_diff.txt
+RC_JQ_RESTORE_FILTER=.["libs"][],.["runtimes"][],.["tests"][]
+HELM_DEPLOY_WITH=smartchart
+INGRESS_SITE=default
+RI_DOTNET=registry.as-team.space/libs/dotnet-sdk5:1.0.1
+GL_TOKEN_BOT=[MASKED]
+IS_ALERTING_TG=true
+RI_JAVA=registry.as-team.space/libs/maven-jdk-11:1.0.0
+CI_COMMIT_REF_PROTECTED=true
+FF_USE_POWERSHELL_PATH_RESOLVER=false
+DOCKERFILE_PACK=/path/to/Dockerfile
+OUTPUT_PUBLISH=./dist
+CACHE_KEY=develop
+GG_MAVEN_SETTINGS_XML=<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+  <servers>
+    <server>
+      <id>maven-releases</id>
+      <username>nexus</username>
+      <password>[MASKED]</password>
+    </server>
+    <server>
+      <id>maven-snapshots</id>
+      <username>nexus</username>
+      <password>[MASKED]</password>
+    </server>
+    <server>
+      <id>central</id>
+      <username>nexus</username>
+      <password>[MASKED]</password>
+    </server>
+  </servers>
+  <mirrors>
+    <mirror>
+      <id>central</id>
+      <name>central</name>
+      <url>https://nexus.as-team.space/repository/maven-group/</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+  </mirrors>
+</settings>
+CI_SERVER_VERSION_MINOR=2
+SR_MANUAL_TAG_RELEASE=false
+CI_COMMIT_SHA=b593dc990da48d532f5eaf154d75ee88f2cbbb5c
+HOME=/root
+FF_NETWORK_PER_BUILD=false
+SR_IS_EXPORTING=true
+CI_DEPENDENCY_PROXY_PASSWORD=[MASKED]
+ROCKETCHAT_PUBLISH_FAIL=*BUILD main-front FAILED*. See details below ->
+CI_PROJECT_VISIBILITY=private
+SR_IS_COMPILE=true
+CI_CONCURRENT_PROJECT_ID=0
+FF_SCRIPT_SECTIONS=false
+SR_ACTIONFILE=true
+CI_COMMIT_MESSAGE=Merge branch '5743' into 'develop'
+fix(NK KIPO): "НК ОНПЗ КИПО: В таблице виджета "Трёхсуточный план паспортизации и отгрузки" изменить столбцы и их порядок заполнения данными" #5743
+See merge request oaovd/osspu/evj/front!5465
+EF_MIGRATIONS_ON=false
+RC_PY_RELEASE_TARGET=MNPZ
+CI_BUILD_NAME=ng-build
+FF_USE_DIRECT_DOWNLOAD=true
+CI_PAGES_DOMAIN=example.com
+DOCKER_EXPORT_PULL_TAG=latest
+CI_SERVER_VERSION=14.2.1
+EF_SCRIPTS_PATH=./ef-scripts
+SOURCE_CODE_PATH=*/
+MF_PROTECT_BRANCH=develop
+CI_REGISTRY=gitlab.as-team.space:4567
+CI_SERVER_PORT=443
+IS_ALERTING=false
+FETCH_FILE=Dockerfile.nginx-rhel-v2
+SEMANTIC_FLAGS=--dry-run
+JQ_RESTORE_FILTER=.["libs"][],.["runtimes"][],.["tests"][]
+CI_PAGES_URL=http://oaovd.example.com/osspu/evj/front
+DOCKER_BUILDKIT=1
+CI_PIPELINE_IID=24549
+COMPILE_TARGET=angular
+CI_REPOSITORY_URL=https://gitlab-ci-token:[MASKED]@gitlab.as-team.space/oaovd/osspu/evj/front.git
+CI_SERVER_URL=https://gitlab.as-team.space
+NPM_AUTH=[MASKED]
+FF_ENABLE_BASH_EXIT_CODE_CHECK=false
+HELM_INGRESS_DOMAIN=as-team.space
+ENV_STAGES_FILE=evj-front.env
+GITLAB_FEATURES=
+RC_JQ_BUILD_FILTER=.["libs"][],.["release"]["MNPZ"][]
+DOCKER_BUILD_ARG_APP_NAME=APP_NAME=main.py
+_TG_PIPELINES_CHAT_ID=-410662388
+UNIT_TESTS_ON=true
+SERVICE_NAME=main-front
+PY_EXTRA_PACKAGES=false
+CI_COMMIT_DESCRIPTION=
+fix(NK KIPO): "НК ОНПЗ КИПО: В таблице виджета "Трёхсуточный план паспортизации и отгрузки" изменить столбцы и их порядок заполнения данными" #5743
+See merge request oaovd/osspu/evj/front!5465
+NO_FTP=false
+FETCH_PROJECT_ID=184
+NEXUS_DOCKER_PASS=[MASKED]
+GIT_DEPTH=3
+JQ_TESTS_FILTER=.["libs"][],.["tests"][]
+CI_JOB_STAGE=build-n-test
+CI_PIPELINE_URL=https://gitlab.as-team.space/oaovd/osspu/evj/front/-/pipelines/83033
+COMPOSE_DOCKER_CLI_BUILD=1
+CI_DEFAULT_BRANCH=develop
+SR_IS_FREEZE=true
+NUGET_PACKAGES_DIRECTORY=.nuget
+CI_BUILD_REF=b593dc990da48d532f5eaf154d75ee88f2cbbb5c
+OBJECTS_DIRECTORY=obj
+GITLAB_API_TOKEN=[MASKED]
+IS_EXPORTING_STAGE=true
+SR_IS_ALERTING=false
+CI_SERVER_VERSION_PATCH=1
+PROJECT_PATH=/builds/oaovd/osspu/evj/front
+CI_COMMIT_TITLE=Merge branch '5743' into 'develop'
+RELEASE_BRANCH=master alpha dev develop devops
+CI_PROJECT_ROOT_NAMESPACE=oaovd
+HELM_NEXUS_REGISTRY=helm-gazgolder
+HELM_NEXUS_CHART_VERSION=2.0.49
+ANGULAR_ENVIRON_TS=./src/environments/environment.prod.ts
+GITLAB_USER_NAME=Максим Перминев
+PY_ENV_DEPLOY=SET_VALUE_HERE
+CI_PROJECT_DIR=/builds/oaovd/osspu/evj/front
+HELM_DEPLOY_ON=true
+SHLVL=1
+PY_JINJA_TEMPLATES=./ci/scripts/docker-yaml-templator/templates
+CI_RUNNER_ID=67
+NS=default
+CI_PIPELINE_CREATED_AT=2024-12-11T10:22:00+03:00
+CI_COMMIT_TIMESTAMP=2024-11-13T10:48:40+03:00
+SERVE_PORT=8101
+__TG_RELEASE_CHAT_ID=-410662388
+-1001321965108
+CI_DISPOSABLE_ENVIRONMENT=true
+MF_MERGE_ACCESS_LVL=40
+CI_JOB_JWT=[MASKED]
+HELM_RELEASE=front
+CI_REGISTRY_IMAGE=gitlab.as-team.space:4567/oaovd/osspu/evj/front
+CI_BUILD_ID=445187
+JQ_FILTER=SET_VALUE_HERE
+GG_NEXUS_PASSWORD=[MASKED]
+TG_APITOKEN=[MASKED]
+CI_SERVER_PROTOCOL=https
+DOCKERFILE_STAGE_CACHE=your-stage
+CI_COMMIT_AUTHOR=Денис Мордашов <mordashov.d@gazgolder.ru>
+GG_NPMRC=registry=https://nexus.as-team.space/repository/npm-group/
+@as-platform:registry=https://nexus.as-team.space/repository/npm-hosted/
+//nexus.as-team.space/repository/npm-group/:username=nexus
+//nexus.as-team.space/repository/npm-group/:_password="UXExMjM0NTY3OA=="
+//nexus.as-team.space/repository/npm-hosted/:username=nexus
+//nexus.as-team.space/repository/npm-hosted/:_password="UXExMjM0NTY3OA=="
+email=nexus@gazgolder.ru
+always-auth=true
+legacy-peer-deps=true
+NEXUS_REPOSITORY=npm-group
+PY_RELEASE_TARGET=default-release-target
+GG_NEXUS_USERNAME=nexus
+GG_NPM_AUTH=[MASKED]
+REFRESH_NPM_PACKAGES=false
+SCH_VERSION=1.2.0
+CI_COMMIT_REF_NAME=develop
+CI_SERVER_HOST=gitlab.as-team.space
+CI_JOB_URL=https://gitlab.as-team.space/oaovd/osspu/evj/front/-/jobs/445187
+SR_IS_FETCH_REMOTE_DOCKERFILE=false
+DEPLOY_DOMAIN=default
+NEXUS_SVC_PASSWORD=[MASKED]
+CI_JOB_TOKEN=[MASKED]
+HELM_NEXUS_CHART=asplatform-backend
+GG_REPO_FETCHER_TOKEN=[MASKED]
+NPM_INSTALL_OPTS=--force
+CI_JOB_STARTED_AT=2024-12-11T10:29:08+03:00
+CI_CONCURRENT_ID=0
+SEMVER_EXPORT_ON=true
+CI_BUILD_TOKEN=[MASKED]
+CI_COMMIT_BRANCH=develop
+CI_PROJECT_CLASSIFICATION_LABEL=
+FF_USE_LEGACY_KUBERNETES_EXECUTION_STRATEGY=false
+IS_TRACKING_CONFIG=true
+CI_RUNNER_REVISION=58ba2b95
+TC_FILE_PATTERN=config.json
+CI_BUILD_BEFORE_SHA=0000000000000000000000000000000000000000
+SCH_NAME=smartchart
+IS_MULTISTAGE_DOCKERFILE=false
+CI_DEPENDENCY_PROXY_USER=gitlab-ci-token
+RC_JQ_TESTS_FILTER=.["libs"][],.["tests"][]
+SR_SEMVER_RELEASE_DRY_RUN=false
+FF_USE_DYNAMIC_TRACE_FORCE_SEND_INTERVAL=false
+RN_TRIGGER=false
+FF_DISABLE_UMASK_FOR_DOCKER_EXECUTOR=false
+CI_PROJECT_PATH_SLUG=oaovd-osspu-evj-front
+ROCKETCHAT_TOKEN=sZ49YRxrJcNh7t4bG/iyyhPQyHYseTZxtCEFCfFkxM5tN8cpiwELkskQoB7C9GWSxx
+CI_NODE_TOTAL=1
+INGRESS_ENABLED=false
+EF_MIGRATIONS_SCRIPT_ON=false
+GG_MAVEN_SETTINGS_XML_EXTRA=<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+  <servers>
+    <server>
+      <id>maven-releases</id>
+      <username>nexus</username>
+      <password>[MASKED]</password>
+    </server>
+    <server>
+      <id>maven-snapshots</id>
+      <username>nexus</username>
+      <password>[MASKED]</password>
+    </server>
+    <server>
+      <id>central</id>
+      <username>nexus</username>
+      <password>[MASKED]</password>
+    </server>
+  </servers>
+  <mirrors>
+    <mirror>
+      <id>central</id>
+      <name>central</name>
+      <url>https://nexus.as-team.space/repository/maven-public/</url>
+      <mirrorOf>central</mirrorOf>
+    </mirror>
+  </mirrors>
+  
+</settings>
+PUBLISH_FILTER=**/bin/Release/net*/publish -d -1
+NEXUS_SERVER=https://nexus.as-team.space
+CI_BUILDS_DIR=/builds
+CI_JOB_ID=445187
+CI_PROJECT_REPOSITORY_LANGUAGES=typescript,html,scss,javascript,css
+IS_FETCH_REMOTE_DOCKERFILE=true
+SR_IS_MAKE_DOCKER_IMG=true
+DOCKER_AUTH_CONFIG={
+	"auths": {
+		"default-route-openshift-image-registry.apps-crc.testing": {
+			"auth": "a3ViZWFkbWluOjJFLTI2TDJXbXpPaVRZWUtRbld1R1JJNFJtaW0xT3llam5LVm5WNnFkNzA="
+		},
+		"gitlab.as-team.space:4567": {
+			"auth": "eWFrdWJvdnNraXkuc3Y6Q2tqO3lzcTEwIQ=="
+		},
+		"https://index.docker.io/v1/": {
+			"auth": "eWhhcnd5bjpFdmlsc2FsYTc="
+		},
+		"k8s-registry.l33t.one": {
+			"auth": "cmVnaXN0cnk6UEBzc3cwcmQxMjM="
+		},
+		"nexus.as-team.space": {
+			"auth": "[MASKED]"
+		},
+		"nexxus.as-team.space": {
+			"auth": "bmV4dXM6UXExMjM0NQ=="
+		},
+		"registry.as-team.space": {
+			"auth": "cmVnaXN0cnk6UEBzc3cwcmQxMjM="
+		},
+		"registry.gitlab.com": {
+			"auth": "YXNkZXZvcHM6UEBzc3cwcmQhQCM="
+		},
+		"registry.l33t.one": {
+			"auth": "cmVnaXN0cnk6UEBzc3cwcmQxMjM="
+		},
+		"registry.redhat.io": {
+			"auth": "eWFrdWJvdnNraXk6RXZpbHNhbGE3"
+		}
+	}
+}
+KUBECTL_AUTH_CONFIG=apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeE1EUXlNREV4TkRnek5Wb1hEVE14TURReE9ERXhORGd6TlZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBT3h4CktwY1Q2V3RCQys1UW9sTG0xQmYxNXoyOUlRUHVGNVM3NERFVVRXOWticG5iNUExNkhyVTNyS01LOE1ZK2IxNHcKQzhYWlhWMk91Skl4UzRWcFJHN1dQYlFvcnlZd0pWL3B5WW5PSHRMaStSLzVUZXIvU1pJdVFCNk53cG9LOHpDQwpFSXpISXA4S3BhR2JCRmVoOEphV2NodC9vNTlCZmRheXgxYVJTWmZXQ3N5bHd4dmVuNEx6dFUvZ25CeHU2MkZ5CmNmNTIwTE1MenpVSTNFekFUQmxnYS8zWVpsZXdMekFWcDQ5dmZkSTV0UlI0Q2pkcjVmWmIxazVOZWJpa0NjZTMKZElCbHZUOTdYajBZQXQwUi9LKzJYRU1TWXM2ZFdyUGd0Z29oT2ZRdURVMnF0ejFsVEF2Y2dvNkE5WjhGbXkyNwpPMWd3Z3NGTFN3Z2Y2ckpCQlBNQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZJVEtwYW11REtyMDhHTVdpNkhLV25kODdBV1lNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDM2dTZ3NqZnc3WHhPQS9NbC9aRzY5ejZTcDVUbVFsNzRxTEFtbm14Q0R1M1MxMXFCNApFUlI3OW9Ma0ZSanFyNVYwRksrdVVPQ1dHU0lWZm10bUQvNC9qa1BsNmJ1bk02aXdZLzZrYVlBZldaUExCT0pGClRWVUw5SmYrQ2lEYlkxTFZRVFk2K0tLK0t2dzZ3dmVmMHVwZ0NzM284T2dkYmc2NDBUU095V3FMWmowa0xQNm4KeXFVNU10L3RQSHU5bnMwdElhRmZLaTYrVjBEOFV5WEhVUVZKNThVUTFzSHNLNm94Um5CRmVFQWF0djVBalNhSgpxbFVMV3NPUUVVcVhTeDM2K0VtZFVTV3NQNStiYm5WS2x3RkdNb1N1SFUzQ09PSVhaYmlMSUlIU2d1RU50S3laClppMHM5WFZBeldvNEtyVXNGODFKN0JTbmFRcEdZbHVXYmMxdgotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    server: https://192.168.0.30:6443
+  name: kubernetes
+contexts:
+- context:
+    cluster: kubernetes
+    user: kubernetes-admin
+  name: kubernetes-admin@kubernetes
+current-context: kubernetes-admin@kubernetes
+kind: Config
+preferences: {}
+users:
+- name: kubernetes-admin
+  user:
+    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURJVENDQWdtZ0F3SUJBZ0lJRlI5Wnh0cnhpK0l3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TVRBME1qQXhNVFE0TXpWYUZ3MHlOVEEwTWpJd09UQTNNamhhTURReApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1Sa3dGd1lEVlFRREV4QnJkV0psY201bGRHVnpMV0ZrCmJXbHVNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDQVFFQXhNZ1UwRkUwWlFpOTBRUU4KWXpjZmErUkJYRmZMRUlDOE5yYU80WEJpcjYvWDVHZ1ZkZkRmN3BzbHFqc0c4d1JFYnZFQ0NrQmhIZzA1Z2kzNQpLQ29MQUYwcVlyRjJ5TzA3VHpVYmtyUXE5SXFLMHZabVZ0YVA4MGRqbWU1eHBkSnh0aisra1ZDZUx2djZvbm5aCjNINEZrOUQ3dFhsdTBNenZoeEJoTVQ2TklQTTlQdXF1dEw4SUhNSzVPNDhmZHNqRVgwNitUejJiYVUzRTQwMmgKS2huZk9GWm1OUWcvYjJscmJCa2hPYnRWRzhEYy9aZThxdzdhdC9PcE5oQUVqbk1lVkdVYktuVXdGdWVLNGU0QgpNOXlZMEZpWjg1ZHhFY0VOUHFUUms0VnMyQXZwRUlybEs2Y29FOVQ1c3FMODA4TndCRjRQYWc4S0U5aG95anlVCmJPVTRYUUlEQVFBQm8xWXdWREFPQmdOVkhROEJBZjhFQkFNQ0JhQXdFd1lEVlIwbEJBd3dDZ1lJS3dZQkJRVUgKQXdJd0RBWURWUjBUQVFIL0JBSXdBREFmQmdOVkhTTUVHREFXZ0JTRXlxV3ByZ3lxOVBCakZvdWh5bHAzZk93RgptREFOQmdrcWhraUc5dzBCQVFzRkFBT0NBUUVBUXhDMGF6UTkzTTA4OHNUL25nTjRSWmw0eSsySm54VEVVa09WCldNMnNyWnRVZ2pRUVdPRjlMVmJLTUhaWTRFL1cxR0NYZTY4anpsMlNBR1h6dVgwUzg2eGJacm11TThLNEZmajUKZW5kWjlvUDFLWFkyQTVhQTkyT3NMY2E2QTZVM3VFM2wzZTdLckxURE5RdXUyc0hVREpYak1YR0VVdGQ5L0hYUAoyUzJwZ0tlSERmaEtXeHl2Yys1aEcyOVZTZWJhVDJUbk13KzV1QXEwVFVBNXNidkpERkdIM1JsTEdXeENLSWhSCnNlMi9wVlMrRC9zeFJDcVJtazFnZ2JIeDNCRjlpbkdwbVRQZk45bjBMdHlVcVFNWE5tSnMzakNFMjIwSGZ1OHEKSnlnZnhkOFZrZ05vaUl5cGZOU3gvK2syTTNSUWt1cjRUTk9SeWN6Um8rNXYxYUl3TkE9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb2dJQkFBS0NBUUVBeE1nVTBGRTBaUWk5MFFRTll6Y2ZhK1JCWEZmTEVJQzhOcmFPNFhCaXI2L1g1R2dWCmRmRGY3cHNscWpzRzh3UkVidkVDQ2tCaEhnMDVnaTM1S0NvTEFGMHFZckYyeU8wN1R6VWJrclFxOUlxSzB2Wm0KVnRhUDgwZGptZTV4cGRKeHRqKytrVkNlTHZ2Nm9ublozSDRGazlEN3RYbHUwTXp2aHhCaE1UNk5JUE05UHVxdQp0TDhJSE1LNU80OGZkc2pFWDA2K1R6MmJhVTNFNDAyaEtobmZPRlptTlFnL2IybHJiQmtoT2J0Vkc4RGMvWmU4CnF3N2F0L09wTmhBRWpuTWVWR1ViS25Vd0Z1ZUs0ZTRCTTl5WTBGaVo4NWR4RWNFTlBxVFJrNFZzMkF2cEVJcmwKSzZjb0U5VDVzcUw4MDhOd0JGNFBhZzhLRTlob3lqeVViT1U0WFFJREFRQUJBb0lCQUNTUFI4NnNSNSs5MEFaVgpTbWQwaGxIMVJtOXhvRGlnc2xjMzg3UE92WWNHbElYTEVMR28zdkhsd1VtdlRjczRyNzRzNk1RZTBleFRhS3ZXCi9zT0hqQ08xSzNyS25kY1d2RDRyRDhSaDFOazZKREN0dHJYTGgxTWJvRldwQjFSWGxPalhUd0NRaWRNUTNhL3kKRTVmemtmVzBqZzlaVUUxYXhlWENGVXlnNG5lTVpiQk1wWUNsa0ErSWFlOVN4STZxWWdyR1dHWjVNeTBWQjJWSQprSzBWZy85L3Jicm54Z2Zjb2NmUEFoK0xaYWRkbmFnYUNkQnIrUyttazZwRFphR05mK2hIOW94eUQraFVteUFaCjhVWWVXbG05R2dPQWZzam5kOS9rdkI4eEhwN3pXVmpJU1p5WVNvL1AweVlzL3NEZUMxNmh0L1pqSXlLa2JqMXYKUmN5TUg4RUNnWUVBK0daVm9CUUU1WEdCOUJWbWxNTWVPQkRSQnBzNlZrVjE5Q1ArTW1HZlE2L081YmcxcDR3Qgp2TVpsQnFZTWJDekFYYnlMUXF5M0dMWTNiUDdtWGN1c3B2U2F4eUdhWTE3U3ZyMlZSWjVrTWg5dnFZdHllbkFNCnpaOWl3YWJUSlJ5NXhXNk5YdmxXdU1KYUpIczBHZWFweUxMZm8xd2pqY2JzYmtCcGVjNzVUQWNDZ1lFQXlzMXUKbGVyV3R1bjdSZFBQVUhsOXlzUzZNK2JHZytvbGJmY25ScUgveklyT2lsdG5ReCtRaFMxQmhPallMWUJCL1VpZgp4M3RjbWhFMjg0a1lmMHhML0hlQ1hRWlJvQmlJY2psdTUvekF0NWZjRTdkUVQ1UnordGVDRDllUHJWS293WHhICmUxUkFJeDhqVG9mVVlCeVprSU5YbVBZamRzdnI5Y29oRktaS2gzc0NnWUE3c0R0N0Q5UnRYZTBnUGRROGd2WkwKK3A1L3UrVTB2ZFF1S2tmMnkwWjkrVXo2SGwybU9ScGh4anFZY21ZaHlFOGhOeUV2a0ZrZTh3bzJncm5RYUJUQQp1WjVIbzJkNTRWczZ3a3VRUXhOSWlBMUk3RjFCMXBMOUJnT3hET2xIemJOR0lkNk9wOU9TNmdESEsyUEZwWXUrCjBseXk0SDBhb0daSHgrcVFmbytoR1FLQmdHUzBGQWl2bjBVZTlONGNxbUpjb2NFeFpRRG14SWEybXpWNnQrOFQKL0hCMk1NOTFTZGFEOHdDZWsxMUxQaVdCL2NLbThHaGU4b0d5c0tYSDJ2bERTcXdvTC95L2FZTGxDOFFranRUMQpwa0RFVU0wZGh1eXRXOVlnYzM0b1hUa0V4YldtWDl4MjNvNVNKUGNXN2JkNEhDMHRleThDY21QSUtQaFpFWW91CmRPM0hBb0dBTGs0c0FCbXlxaG5SQUYrcWlQQmpVWEFud3BtUHdMbDNNRnNHdTB0aC9iTCtWY0V5ZUFUakZkeEsKampaQUJzbnZsY1dCdlVXSWZZb0FOVkxsY01iV0ZRK2VuU2ZzdmlrYVY4TnpxRjk0cmlSOTBKeFYvaWFDeWxLOQpsUXJ5TElvNURUWktuTFRVNGhXQ1Z5RTJibXJaY2ZOcU45bm9CeXZiYVhLbFpwbGVsb3c9Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+SCH_DRY_RUN=false
+DOCKER_BUILD_ARG=
+CI_PROJECT_ID=25
+CI=true
+IS_RELEASE_NOTES=true
+GITLAB_CI=true
+RN_GROUP_PROJECT_ID=55
+CI_JOB_IMAGE=registry.as-team.space/libs/node:14-slim.3
+NEXUS_SVC_USER=nexus
+DOCKER_REPO=cup
+DB_CONTEXT=MsSql
+CI_COMMIT_BEFORE_SHA=0000000000000000000000000000000000000000
+CI_PROJECT_TITLE=Front
+S3_RELEASE_BUCKET=gazgolder/release-tags/front
+ASSEMBLY_VERSION_DEV=0.0.0.24549
+CI_SERVER_VERSION_MAJOR=14
+SR_IS_MULTISTAGE_DOCKERFILE=false
+TG_PIPELINEGUY_APITOKEN=[MASKED]
+EXTERNAL_DOCKER_IMG=onpz.local/evj/evj-front
+HELM_SUBCHART_NAME=evj
+CI_CONFIG_PATH=.gitlab-ci.yml
+NODE_VERSION=14.18.1
+SKIP_BUILD=false
+GG_CONNECTION_STRINGS_POSTGRES=/builds/oaovd/osspu/evj/front.tmp/GG_CONNECTION_STRINGS_POSTGRES
+FF_USE_FASTZIP=false
+CI_BUILD_STAGE=build-n-test
+SR_JQ_BUILD_FILTER=.["libs"][],.["release"]["zyfra-main"][]
+CI_DEPENDENCY_PROXY_SERVER=gitlab.as-team.space:443
+ROCKETCHAT_PACKAGES=[MASKED]
+DOCKER_DRIVER=overlay2
+CI_PROJECT_URL=https://gitlab.as-team.space/oaovd/osspu/evj/front
+HELM_VALUES_OVERRIDE=./environments/projects/main-front/main-front.gazgolder.yaml
+IMG_VERSION=latest
+ROCKETCHAT_PUBLISH_SUCCESS=*main-front* / *New build coming*. Uploaded to gpn-ftp ->
+OLDPWD=/app
+HELM_NS=evj
+_=/usr/bin/env
+npm config set registry ${NEXUS_SERVER}/repository/${NEXUS_REPOSITORY}/
+$ set -v # collapsed multi-line command
+npm config set $NPM_AUTH_PATH:_auth $NPM_AUTH
+npm config set fetch-retry-mintimeout 20000
+npm config set fetch-retry-maxtimeout 120000
+  # overwritng default postscript ngcc with none (improve cicd timing)
+ # npm set-script postinstall "" || sleep 0.1
+  #echo "${GG_NPMRC}" > .npmrc
+  #cat .npmrc || sleep 0.1
+  # npm install --no-package-lock --legacy-peer-deps
+npm install $NPM_INSTALL_OPTS #--no-package-lock --legacy-peer-deps
+npm WARN using --force Recommended protections disabled.
+> as@0.0.0 postinstall
+> ngcc
+Warning: Entry point 'gojs-angular' contains deep imports into '/builds/oaovd/osspu/evj/front/src/assets/libs/gojs/go.js'. This is probably not a problem, but may cause the compilation of entry points to be out of order.
+Warning: Entry point 'ng2-pdf-viewer' contains deep imports into '/builds/oaovd/osspu/evj/front/node_modules/pdfjs-dist/es5/build/pdf', '/builds/oaovd/osspu/evj/front/node_modules/pdfjs-dist/es5/web/pdf_viewer'. This is probably not a problem, but may cause the compilation of entry points to be out of order.
+Warning: Entry point 'gojs-angular' contains deep imports into '/builds/oaovd/osspu/evj/front/src/assets/libs/gojs/go.js'. This is probably not a problem, but may cause the compilation of entry points to be out of order.
+Warning: Entry point 'ng2-pdf-viewer' contains deep imports into '/builds/oaovd/osspu/evj/front/node_modules/pdfjs-dist/es5/build/pdf', '/builds/oaovd/osspu/evj/front/node_modules/pdfjs-dist/es5/web/pdf_viewer'. This is probably not a problem, but may cause the compilation of entry points to be out of order.
+- @circlon/angular-tree-component [fesm2015/esm2015] (https://github.com/CirclonGroup/angular-tree-component.git)
+- @circlon/angular-tree-component [esm2015/esm2015] (https://github.com/CirclonGroup/angular-tree-component.git)
+- @circlon/angular-tree-component [main/umd] (https://github.com/CirclonGroup/angular-tree-component.git)
+- gojs-angular [fesm2015/esm2015] ()
+- gojs-angular [esm2015/esm2015] ()
+- gojs-angular [main/umd] ()
+- ng2-pdf-viewer [fesm2015/esm2015] (git+https://vadimdez@github.com/VadimDez/ng2-pdf-viewer.git)
+- ng2-pdf-viewer [fesm5/esm5] (git+https://vadimdez@github.com/VadimDez/ng2-pdf-viewer.git)
+- ng2-pdf-viewer [esm2015/esm2015] (git+https://vadimdez@github.com/VadimDez/ng2-pdf-viewer.git)
+- ng2-pdf-viewer [esm5/esm5] (git+https://vadimdez@github.com/VadimDez/ng2-pdf-viewer.git)
+- ng2-pdf-viewer [main/umd] (git+https://vadimdez@github.com/VadimDez/ng2-pdf-viewer.git)
+- ngx-image-cropper [fesm2015/esm2015] (https://github.com/Mawi137/ngx-image-cropper.git)
+- ngx-image-cropper [fesm5/esm5] (https://github.com/Mawi137/ngx-image-cropper.git)
+- ngx-image-cropper [esm2015/esm2015] (https://github.com/Mawi137/ngx-image-cropper.git)
+- ngx-image-cropper [esm5/esm5] (https://github.com/Mawi137/ngx-image-cropper.git)
+- ngx-image-cropper [main/umd] (https://github.com/Mawi137/ngx-image-cropper.git)
+added 114 packages, removed 195 packages, changed 447 packages, and audited 1539 packages in 32s
+164 packages are looking for funding
+  run `npm fund` for details
+58 vulnerabilities (4 low, 15 moderate, 34 high, 5 critical)
+To address issues that do not require attention, run:
+  npm audit fix
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+Run `npm audit` for details.
+$ set -v # collapsed multi-line command
+  # rm .npmrc || sleep 0.1
+set +v
+if [ -z $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME ];
+then
+  #LAST_TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
+  DATE=$(date -u +"%Y-%m-%d")
+  echo "replacing envs with $TAG $DATE"
+  sed -i "s/version: '1.12'/version: \'$CI_COMMIT_SHORT_SHA\'/g" $ANGULAR_ENVIRON_TS || sleep 0.1
+  sed -i "s/date: '08-04-2021'/date: \'$DATE\'/g" $ANGULAR_ENVIRON_TS || sleep 0.1
+  cat src/environments/environment.prod.ts || sleep 0.1
+  if [[ $NPM_BUILD_DEPS == "true" ]];
+  then
+    npm set-script build "$NPM_BUILD_DEPS_SCRIPT" || sleep 0.1
+    npm run-script build;
+  else
+    # npm run-script ng build -- --prod;
+    npm run-script build
+  fi
+else
+  if [[ $NPM_BUILD_DEPS == "true" ]];
+  then
+    npm set-script build "$NPM_BUILD_DEPS_SCRIPT" || sleep 0.1
+    npm run-script build;
+  else
+    npm run-script ng build $ANGULAR_PROJECT
+  fi
+fi
+replacing envs with  2024-12-11
+export const environment = {
+    production: true,
+    username: '',
+    password: '',
+    version: '1.13',
+    date: '14-11-2022',
+    isFakeApi: false,
+    location: 'lubs-oil-control',
+};
+> as@0.0.0 build
+> ng build --configuration production
+Option "showCircularDependencies" is deprecated: The recommended method to detect circular dependencies in project code is to use a either a lint rule or other external tooling.
+- Generating browser application bundles (phase: setup)...
+Warning: Entry point 'gojs-angular' contains deep imports into '/builds/oaovd/osspu/evj/front/src/assets/libs/gojs/go.js'. This is probably not a problem, but may cause the compilation of entry points to be out of order.
+✔ Browser application bundle generation complete.
+✔ Browser application bundle generation complete.
+- Copying assets...
+✔ Copying assets complete.
+- Generating index html...
+✔ Index html generation complete.
+Initial Chunk Files           | Names                                                                                                               |  Raw Size | Estimated Transfer Size
+styles.25a11d622139e3b2.css   | styles                                                                                                              |   2.90 MB |                34.46 kB
+scripts.1931914419bd7195.js   | scripts                                                                                                             |   2.31 MB |               509.94 kB
+polyfills.c151a744759486c9.js | polyfills                                                                                                           |  40.87 kB |                13.34 kB
+main.210b47ea57a04a84.js      | main                                                                                                                |  14.24 kB |                 5.59 kB
+| Initial Total                                                                                                       |   5.26 MB |               563.32 kB
+Lazy Chunk Files              | Names                                                                                                               |  Raw Size | Estimated Transfer Size
+7067.3f42952925cbec1b.js      | bootstrap                                                                                                           |   3.98 MB |               472.43 kB
+2234.1fb04d974b5c5008.js      | pages-dashboard-dashboard-module                                                                                    |   1.22 MB |               258.23 kB
+7971.af1d18d3d1963bb1.js      | widgets-CMID-cmid-retro-cmid-retro-module                                                                           | 996.21 kB |               213.49 kB
+2947.661ae3005595c4eb.js      | src-app-widgets-EVJ-events-events-module                                                                            | 668.30 kB |                74.17 kB
+8454.e4b31815c64b28e2.js      | src-app-widgets-NK-document-viewer-document-viewer-module                                                           | 493.18 kB |               116.02 kB
+4101.829745f7bb2c07a8.js      | pages-dashboard-dashboard-module                                                                                    | 482.79 kB |                81.46 kB
+9552.898c9b1f767c025c.js      | src-app-widgets-CD-cd-mnemoschema-cd-mnemoschema-module                                                             | 468.33 kB |                92.85 kB
+997.f4acfc31b50de8dc.js       | src-app-widgets-admin-report-server-configurator-report-server-configurator-module                                  | 388.06 kB |                49.29 kB
+3410.abf64a1a9fca4863.js      | src-app-widgets-EVJ-events-events-module                                                                            | 376.40 kB |                34.92 kB
+4483.2379606c1b24dca9.js      | src-app-widgets-EXPERT-expert-scenarios-configurator-expert-scenarios-configurator-module                           | 301.88 kB |                47.89 kB
+3274.06f3bc083ad41e34.js      | src-app-widgets-EXPERT-expert-scenarios-configurator-expert-scenarios-configurator-module                           | 274.57 kB |                34.58 kB
+4409.8e28a5222114e5bb.js      | pages-dashboard-dashboard-module                                                                                    | 258.33 kB |                37.77 kB
+1139.2b9089b9fe446bc3.js      | src-app-widgets-CD-cd-mat-balance-cd-mat-balance-module                                                             | 251.75 kB |                34.50 kB
+4863.5c657d6b83cae6b3.js      | src-app-widgets-CD-cd-regime-cd-regime-module                                                                       | 238.46 kB |                45.08 kB
+9957.49b76619320d7180.js      | src-app-widgets-admin-admin-panel-admin-panel-module                                                                | 228.18 kB |                27.55 kB
+1450.6ced2f0455681869.js      | src-app-widgets-EXPERT-expert-instructor-expert-instructor-module                                                   | 225.29 kB |                29.62 kB
+3682.c75225bf8e4d9b21.js      | src-app-widgets-NK-nk-shipment-operations-nk-shipment-operations-module                                             | 190.12 kB |                25.84 kB
+9097.a79c9dced19c186f.js      | src-app-widgets-NK-oil-operations-oil-operations-module                                                             | 185.10 kB |                21.97 kB
+295.4c06e2441c298ac6.js       | src-app-widgets-NK-oil-operations-sm-oil-operations-sm-module                                                       | 182.30 kB |                24.70 kB
+5784.f7578df98ca8cd45.js      | -                                                                                                                   | 181.14 kB |                51.49 kB
+1537.04c7555f5c79fe6f.js      | src-app-widgets-ASTUE-astue-mnpz-efficiency-astue-mnpz-efficiency-module                                            | 171.74 kB |                30.18 kB
+7516.619f329664782fe4.js      | src-app-widgets-NK-nk-manual-input-operations-sm-nk-manual-input-operations-sm-module                               | 160.51 kB |                19.32 kB
+9401.d0b70c31d22071d3.js      | src-app-widgets-NK-nk-shipment-operations-nk-shipment-operations-module                                             | 156.32 kB |                41.57 kB
+8113.86f3e8829be0c516.js      | src-app-widgets-NK-petroleum-products-movement-petroleum-products-movement-module                                   | 153.92 kB |                79.25 kB
+5864.72cd0218dfbd8515.js      | src-app-widgets-NK-oil-operations-oil-operations-module                                                             | 150.86 kB |                19.48 kB
+2520.e582e49cea48ffe9.js      | src-app-widgets-NK-tank-calibration-table-tank-calibration-table-module                                             | 133.09 kB |                14.83 kB
+9578.f1152e50539de5c4.js      | src-app-widgets-NK-petroleum-products-movement-petroleum-products-movement-module                                   | 132.45 kB |                15.50 kB
+8816.d10b4120f9d6818b.js      | src-app-widgets-NK-nk-manual-input-operations-sm-nk-manual-input-operations-sm-module                               | 128.33 kB |                36.93 kB
+3924.c6d5468c1b061572.js      | src-app-widgets-admin-admin-shift-schedule-admin-shift-schedule-module                                              | 124.36 kB |                20.03 kB
+4328.2069e7f54b3717b3.js      | src-app-widgets-EVJ-events-events-module                                                                            | 119.32 kB |                11.69 kB
+9138.e2bfebe9fe85086b.js      | src-app-widgets-EVJ-events-events-module                                                                            | 118.27 kB |                14.07 kB
+8700.ad250468ef3610f5.js      | pages-dashboard-dashboard-module                                                                                    | 114.93 kB |                 9.92 kB
+8450.b5b5c2affc414945.js      | pages-configurator-configurator-module                                                                              | 111.04 kB |                14.69 kB
+9336.882e395def929a30.js      | src-app-widgets-EVJ-evj-events-evj-events-module                                                                    |  91.98 kB |                18.00 kB
+2715.9a6e04ec0a29a594.js      | src-app-widgets-admin-workflow-workflow-module                                                                      |  89.41 kB |                14.92 kB
+5020.e566ac18ab1bf9d0.js      | widgets-CMID-cmid-factor-analysis-suutp-cmid-factor-analysis-suutp-module                                           |  86.87 kB |                11.35 kB
+5977.256f9ba27fd7c8e4.js      | pages-configurator-configurator-module                                                                              |  81.34 kB |                11.45 kB
+1263.e06755f4ec968272.js      | src-app-widgets-LCO-map-enterprise-enterprise-map-module                                                            |  75.91 kB |                13.57 kB
+1545.27cf519c7f90eadf.js      | src-app-widgets-LCO-oil-control-oil-control-module                                                                  |  75.34 kB |                14.32 kB
+2697.6f5e6f9cee18d578.js      | src-app-widgets-LCO-chain-map-chain-map-module                                                                      |  75.25 kB |                 9.16 kB
+3557.fdd236f585a268df.js      | pages-dashboard-dashboard-module                                                                                    |  74.45 kB |                11.95 kB
+7208.806a5d374a3c3459.js      | widgets-CMID-MSK-cmid-factor-analysis-heating-msk-cmid-factor-analysis-heating-msk-module                           |  74.17 kB |                 8.65 kB
+3013.089d24837bd0edfc.js      | widgets-CMID-cmid-number-of-outages-cmid-number-of-outages-module                                                   |  73.32 kB |                10.21 kB
+3917.89bbbc1209db2203.js      | -                                                                                                                   |  72.77 kB |                17.94 kB
+352.e5494340e77ff70b.js       | widgets-CMID-cmid-number-of-outages-cmid-number-of-outages-module                                                   |  72.36 kB |                10.54 kB
+2333.744dd3fdb309eee5.js      | widgets-CD-cd2-passport-calc-cd2-passport-calc-module                                                               |  70.38 kB |                11.31 kB
+common.c15d424c4128b5a3.js    | common                                                                                                              |  70.21 kB |                14.85 kB
+1830.4f33d18e6e4d132a.js      | pages-dashboard-dashboard-module                                                                                    |  68.95 kB |                 5.77 kB
+9776.bfff78b46a286a17.js      | src-app-widgets-EVJ-evj-equipment-state-evj-equipment-state-module                                                  |  68.32 kB |                11.81 kB
+5009.59f93149f27c3db4.js      | src-app-widgets-EVJ-evj-manual-input-evj-manual-input-module                                                        |  67.89 kB |                11.09 kB
+7185.e39578148dcdbdc4.js      | widgets-CMID-cmid-factor-analysis-skz-cmid-factor-analysis-skz-module                                               |  67.31 kB |                 8.78 kB
+646.2d58281204dab3e7.js       | widgets-CMID-MSK-cmid-factor-analysis-ecosituation-msk-cmid-factor-analysis-ecosituation-msk-module                 |  64.53 kB |                 8.15 kB
+3094.63b63ccb52bdba81.js      | src-app-widgets-EVJ-evj-accept-shift-evj-accept-shift-module                                                        |  64.38 kB |                12.15 kB
+5938.875f281104584b68.js      | src-app-widgets-admin-custom-report-properties-reference-custom-report-properties-reference-module                  |  60.83 kB |                 9.51 kB
+6637.988991658916fb8d.js      | src-app-widgets-EXPERT-expert-tested-expert-tested-module                                                           |  59.16 kB |                10.13 kB
+6895.740cc323e80e01f8.js      | -                                                                                                                   |  55.60 kB |                13.95 kB
+221.04fac08ba5eaa501.js       | src-app-widgets-admin-admin-references-admin-references-module                                                      |  55.17 kB |                 7.65 kB
+729.51f0031a8117cbfc.js       | src-app-widgets-NK-document-coding-document-coding-module                                                           |  54.07 kB |                 8.94 kB
+3890.a4776b7f08b35879.js      | src-app-widgets-LCO-ring-factory-diagrams-ring-factory-diagrams-module                                              |  53.32 kB |                 8.00 kB
+8615.4c1ebffaeb01a3f6.js      | src-app-widgets-admin-reference-reference-module                                                                    |  52.77 kB |                 6.97 kB
+9410.f795bab3cfaf60a5.js      | widgets-CMID-cmid-filter-retro-cmid-filter-retro-module                                                             |  48.57 kB |                10.00 kB
+3555.f683cabe561000f1.js      | pages-dashboard-dashboard-module                                                                                    |  47.33 kB |                11.09 kB
+362.0281d0d3d57693b9.js       | src-app-widgets-EVJ-change-shift-change-shift-module                                                                |  45.86 kB |                 9.42 kB
+7842.ff07cb5ce9e95f49.js      | src-app-widgets-EVJ-evj-equipment-info-evj-equipment-info-module                                                    |  44.89 kB |                 9.44 kB
+5092.418578d9690032fe.js      | src-app-widgets-NK-nk-tank-information-nk-tank-information-module                                                   |  44.38 kB |                 7.52 kB
+2705.d549d92f0f479cd7.js      | src-app-widgets-OZSM-ozsm-monitoring-main-ozsm-monitoring-main-module                                               |  41.10 kB |                 7.40 kB
+7974.a336727ce82250b9.js      | src-app-widgets-CD-cd-models-calculation-cd-models-calculation-module                                               |  40.21 kB |                 7.60 kB
+2085.b66ae10054308aea.js      | src-app-widgets-NK-oil-operations-oil-operations-module                                                             |  39.68 kB |                 7.54 kB
+8078.f7ad5bb470ee5287.js      | src-app-widgets-admin-admin-panel-admin-panel-module                                                                |  38.22 kB |                 7.92 kB
+2362.2b8ba26c6dce5e4e.js      | widgets-CMID-cmid-filter-cmid-filter-module                                                                         |  36.79 kB |                 7.26 kB
+1978.3b4547560cdcf133.js      | src-app-widgets-others-mnemoscheme-constructor-test-mnemoscheme-constructor-test-module                             |  35.36 kB |                 7.09 kB
+8475.5744a6a8bf7457c7.js      | src-app-widgets-LCO-energetics-energetics-module                                                                    |  35.28 kB |                 4.92 kB
+671.3432269052e22c70.js       | src-app-widgets-CMID-cmid-factor-analysis-cmid-factor-analysis-module                                               |  35.03 kB |                 6.71 kB
+9924.1e1c0e3ce09a77e8.js      | widgets-SUUTP-suutp-equipment-factory-state-suutp-equipment-factory-state-module                                    |  34.98 kB |                 7.23 kB
+2855.966b96572aeb8b61.js      | src-app-widgets-NK-nk-manual-input-operations-sm-nk-manual-input-operations-sm-module                               |  33.88 kB |                 7.15 kB
+8431.67081eccd77da9a0.js      | src-app-widgets-NK-nk-kipo-nk-kipo-form-nk-kipo-form-module                                                         |  33.82 kB |                 6.10 kB
+3987.a9ad8693179294af.js      | src-app-widgets-NK-nk-shipment-operations-nk-shipment-operations-module                                             |  33.35 kB |                 7.11 kB
+7298.7cf4bd92931374ea.js      | src-app-widgets-NK-quality-docs-view-quality-docs-view-module                                                       |  33.27 kB |                 6.17 kB
+7814.87180c3d06d040d3.js      | src-app-widgets-NK-nk-onpz-kipo-nk-onpz-pasportplan-nk-onpz-pasportplan-module                                      |  33.18 kB |                 5.32 kB
+7875.428f885e59451c86.js      | src-app-widgets-EVJ-evj-rate-result-evj-rate-result-module                                                          |  31.72 kB |                 6.17 kB
+4938.c0b924bf8a84518d.js      | src-app-widgets-CD-cd-reactor-parameters-cd-reactor-parameters-module                                               |  31.45 kB |                 5.56 kB
+2411.8bfb44abc7d6a45f.js      | src-app-widgets-CMID-cmid-factor-analysis-cmid-factor-analysis-module                                               |  31.11 kB |                 7.10 kB
+9165.ab17984df574247d.js      | widgets-CMID-MSK-cmid-paz-number-of-outages-msk-cmid-paz-number-of-outages-msk-module                               |  30.32 kB |                 6.01 kB
+4998.eceb397e811b8ec1.js      | widgets-EVJ-evj-equipment-state-info-evj-equipment-state-info-module                                                |  29.63 kB |                 5.94 kB
+809.4e7078f7cad918bd.js       | src-app-widgets-EVJ-evj-events-evj-events-module                                                                    |  29.18 kB |                 5.50 kB
+2838.7af1f25a9eac1e93.js      | src-app-widgets-EVJ-evj-shifts-info-evj-shifts-info-module                                                          |  29.15 kB |                 5.97 kB
+8625.1b4538154db1743c.js      | src-app-widgets-LCO-line-chart-line-chart-module                                                                    |  28.77 kB |                 5.11 kB
+9516.51069538379d513f.js      | src-app-widgets-CMID-cmid-often-closed-positions-suutp-cmid-often-closed-positions-suutp-module                     |  28.76 kB |                 5.14 kB
+640.4a4ac615d20f4bf4.js       | src-app-widgets-NK-quality-docs-panel-quality-docs-panel-module                                                     |  28.76 kB |                 5.50 kB
+9212.303122f605b911df.js      | src-app-widgets-NK-reasons-deviations-reasons-deviations-module                                                     |  28.42 kB |                 5.77 kB
+4725.7e31d9b3fbf72e22.js      | widgets-CMID-cmid-number-of-outages-cmid-number-of-outages-module                                                   |  28.40 kB |                 4.41 kB
+1901.31ed094da83e9fb9.js      | widgets-CD-cd2-storage-calc-cd2-storage-calc-module                                                                 |  27.52 kB |                 4.75 kB
+7212.9339702ff0fa35e8.js      | src-app-widgets-LCO-semicircle-energy-semicircle-energy-module                                                      |  27.09 kB |                 4.21 kB
+6703.d8192777826fc23c.js      | src-app-widgets-LCO-spline-trends-chart-spline-trends-chart-module                                                  |  27.07 kB |                 6.91 kB
+6482.e903f4c646ee3a1d.js      | widgets-CMID-MSK-cmid-filter-pid-msk-cmid-filter-pid-msk-module                                                     |  26.93 kB |                 6.72 kB
+5172.1044b1d7211803d0.js      | widgets-CMID-MSK-cmid-filter-skz-msk-cmid-filter-skz-msk-module                                                     |  26.90 kB |                 6.71 kB
+5453.f0b48716a06d0022.js      | src-app-widgets-NK-nk-reservoirs-restapi-nk-reservoirs-restapi-module                                               |  26.84 kB |                 5.53 kB
+2317.7e93006779b7c095.js      | src-app-widgets-NK-tank-information-tank-information-module                                                         |  26.54 kB |                 5.36 kB
+384.f29a445c420aef5d.js       | src-app-widgets-NK-oil-operations-oil-operations-module                                                             |  26.43 kB |                 6.62 kB
+1553.1d973474a2dff928.js      | src-app-widgets-CD-cd-mat-balance-lists-cd-mat-balance-lists-module                                                 |  26.34 kB |                 5.27 kB
+1601.1ba9af9a37924795.js      | src-app-widgets-NK-document-viewer-document-viewer-module                                                           |  26.09 kB |                 4.77 kB
+1554.8255395edd5d23e4.js      | src-app-widgets-NK-documents-scans-documents-scans-module                                                           |  26.08 kB |                 5.73 kB
+888.bd936e428588fe09.js       | src-app-widgets-CD-cd-deviation-mat-cd-deviation-mat-module                                                         |  25.90 kB |                 4.65 kB
+6954.d0da5534b06f85c2.js      | widgets-CMID-MSK-cmid-pid-factor-analysis-msk-cmid-pid-factor-analysis-msk-module                                   |  25.86 kB |                 5.35 kB
+171.84fbcc4beb4a788e.js       | widgets-CMID-cmid-retro-cmid-retro-module                                                                           |  25.83 kB |                11.11 kB
+6239.bbb993c68f605d3e.js      | src-app-widgets-LCO-observation-norm-tr-observation-norm-tr-module                                                  |  25.53 kB |                 4.90 kB
+2958.85e818bdca3d2008.js      | widgets-CD-cd-mat-balance-research-cd-mat-balance-research-module                                                   |  25.38 kB |                 5.90 kB
+8958.3666e22621e08484.js      | widgets-CMID-MSK-cmid-factor-analysis-skz-msk-cmid-factor-analysis-skz-msk-module                                   |  25.07 kB |                 5.08 kB
+8378.6e69fc7667478d86.js      | widgets-CMID-MSK-cmid-filter-heating-msk-cmid-filter-heating-msk-module                                             |  24.94 kB |                 6.12 kB
+7577.0803bb1b2f057fad.js      | widgets-CMID-cmid-factor-analysis-do-cmid-factor-analysis-do-module                                                 |  24.72 kB |                 5.11 kB
+7163.cb51d758d0fbaa3c.js      | src-app-widgets-NK-nk-manual-input-operations-sm-nk-manual-input-operations-sm-module                               |  24.62 kB |                 5.70 kB
+7261.804f75995a5e9b32.js      | src-app-widgets-EVJ-evj-common-manager-evj-common-manager-module                                                    |  24.40 kB |                 5.52 kB
+7357.30c7306901c91901.js      | src-app-widgets-CD-cd-catalyst-graph-cd-catalyst-graph-module                                                       |  23.96 kB |                 5.72 kB
+7990.9c5d617791838024.js      | widgets-CMID-cmid-vector-diagram-cmid-vector-diagram-module                                                         |  23.14 kB |                 5.01 kB
+4355.0b4371a9d337e4c0.js      | src-app-widgets-OZSM-ozsm-monitoring-main-ozsm-monitoring-main-module                                               |  22.95 kB |                 4.25 kB
+9309.a65460eadd52bd2c.js      | pages-login-login-module                                                                                            |  22.84 kB |                 4.71 kB
+8634.f954226fdf92f191.js      | pages-dashboard-dashboard-module                                                                                    |  22.79 kB |                 4.47 kB
+7969.5f8007c76913a42d.js      | src-app-widgets-LCO-production-pyramid-production-pyramid-module                                                    |  22.79 kB |                 3.22 kB
+1872.db7f19bdd4d5f04e.js      | src-app-widgets-CMID-MSK-cmid-attention-positions-skz-msk-cmid-attention-positions-skz-msk-module                   |  22.68 kB |                 4.87 kB
+1031.997ce6a2e30cb6c3.js      | src-app-widgets-CMID-cmid-often-closed-positions-skz-cmid-often-closed-positions-skz-module                         |  22.54 kB |                 4.77 kB
+7331.a52ce0337a862285.js      | pages-dashboard-dashboard-module                                                                                    |  22.54 kB |                 5.29 kB
+1316.448e449352cc4325.js      | widgets-CMID-cmid-production-map-cmid-production-map-module                                                         |  22.17 kB |                 5.80 kB
+2205.6087473814dbd32b.js      | src-app-widgets-EVJ-events-events-module                                                                            |  22.17 kB |                 4.59 kB
+1052.0f9f75c3b622c419.js      | widgets-SUUTP-suutp-complexes-table-suutp-complexes-table-module                                                    |  21.97 kB |                 4.36 kB
+779.742c5e8aeb104d37.js       | src-app-widgets-OZSM-ozsm-circle-planning-diagram-ozsm-circle-planning-diagram-module                               |  21.81 kB |                 4.29 kB
+46.8f44df4395ca5e20.js        | widgets-CMID-MSK-cmid-dynamics-indicators-ecosituation-msk-cmid-dynamics-indicators-ecosituation-msk-module         |  21.54 kB |                 5.13 kB
+826.70921dd5ed238ab1.js       | widgets-CMID-cmid-overall-operational-indicator-suutp-cmid-overall-operational-indicator-suutp-module               |  21.27 kB |                 2.45 kB
+3838.15e750bf25f97377.js      | src-app-widgets-EVJ-evj-production-plan-accomplishment-evj-production-plan-accomplishment-module                    |  21.15 kB |                 4.55 kB
+2427.2678d60304aed03c.js      | src-app-widgets-CMID-MSK-cmid-attention-positions-heating-msk-cmid-attention-positions-heating-msk-module           |  20.57 kB |                 4.13 kB
+8368.cf149c3724a635d1.js      | src-app-widgets-LCO-polar-chart-polar-chart-module                                                                  |  20.18 kB |                 3.12 kB
+504.3b5bb35202837784.js       | src-app-widgets-CMID-MSK-cmid-attention-positions-ecosituation-msk-cmid-attention-positions-ecosituation-msk-module |  19.90 kB |                 4.04 kB
+9970.02424ae311a7e0df.js      | widgets-CMID-cmid-overall-operational-indicator-do-cmid-overall-operational-indicator-do-module                     |  19.75 kB |                 4.29 kB
+1321.3756a072bc015e1c.js      | widgets-CMID-MSK-cmid-ecosituation-system-msk-cmid-ecosituation-system-msk-module                                   |  19.69 kB |                 3.88 kB
+4931.18100334ec34ebe0.js      | widgets-CMID-cmid-dynamics-of-metrics-change-cmid-dynamics-of-metrics-change-module                                 |  19.63 kB |                 5.81 kB
+1054.0d0177048d0c5408.js      | src-app-widgets-OZSM-ozsm-diagrams-widget-ozsm-diagrams-widget-module                                               |  19.55 kB |                 4.01 kB
+893.4ba08535aec12bd9.js       | src-app-widgets-EVJ-evj-common-manager-evj-common-manager-module                                                    |  19.27 kB |                 4.81 kB
+529.b957623780f8fdc5.js       | -                                                                                                                   |  18.75 kB |                 5.07 kB
+4103.e7deba262e7a2be7.js      | src-app-widgets-NK-nk-manual-input-operations-sm-nk-manual-input-operations-sm-module                               |  18.63 kB |                 4.42 kB
+367.bc37a6cdf11c2e69.js       | src-app-widgets-LCO-line-diagram-line-diagram-module                                                                |  18.60 kB |                 3.86 kB
+6688.86b9626653ec6d2f.js      | widgets-EVJ-evj-switched-on-streams-direction-evj-switched-on-streams-direction-module                              |  18.55 kB |                 4.07 kB
+2938.a9a6a630a830807a.js      | src-app-widgets-LCO-point-diagram-point-diagram-module                                                              |  18.41 kB |                 3.14 kB
+6763.1c80c08d295db966.js      | src-app-widgets-LCO-triggering-critical-parameters-triggering-critical-parameters-module                            |  18.28 kB |                 3.01 kB
+6950.849a52da67e6602a.js      | src-app-widgets-CMID-cmid-close-reason-cmid-close-reason-module                                                     |  18.08 kB |                 3.88 kB
+7702.1d76910046f6a28b.js      | src-app-widgets-CMID-cmid-close-reason-cmid-close-reason-module                                                     |  18.04 kB |                 4.93 kB
+281.e1091b0a82a9d56a.js       | src-app-widgets-CD-cd-mnemoschema-research-cd-mnemoschema-research-module                                           |  17.73 kB |                 4.73 kB
+8480.6b399ddd107bf4d0.js      | src-app-widgets-CMID-MSK-cmid-paz-often-closed-positions-msk-cmid-paz-often-closed-positions-msk-module             |  17.71 kB |                 4.09 kB
+9381.334e0b3121a854f6.js      | src-app-widgets-LCO-truncated-diagram-traffic-light-truncated-diagram-traffic-light-module                          |  17.70 kB |                 4.39 kB
+6178.44cdb7776e189246.js      | widgets-CMID-cmid-often-closed-positions-do-cmid-often-closed-positions-do-module                                   |  17.56 kB |                 3.98 kB
+6799.e70f6f32d2473799.js      | src-app-widgets-LCO-solid-gauge-with-marker-solid-gauges-solid-gauges-module                                        |  17.55 kB |                 3.58 kB
+3214.b3668722aefce485.js      | src-app-widgets-CMID-MSK-cmid-pid-attention-positions-msk-cmid-pid-attention-positions-msk-module                   |  17.53 kB |                 4.05 kB
+1460.e29611b72691bbb0.js      | src-app-widgets-OZSM-ozsm-scenarios-ozsm-scenarios-module                                                           |  17.41 kB |                 3.82 kB
+206.0d866ea048e82079.js       | src-app-widgets-CMID-cmid-often-closed-positions-cmid-often-closed-positions-module                                 |  17.33 kB |                 3.96 kB
+7363.c5fa75d126a1ea3a.js      | src-app-widgets-CD-cd-quality-cd-quality-module                                                                     |  17.29 kB |                 3.71 kB
+1334.14e31f33e883d9f6.js      | src-app-widgets-LCO-product-stocks-product-stocks-module                                                            |  17.29 kB |                 3.10 kB
+6369.e460e79118f661ca.js      | src-app-widgets-LCO-truncated-diagram-counter-truncated-diagram-counter-module                                      |  17.24 kB |                 3.11 kB
+8077.af9991802c42f55b.js      | src-app-widgets-CMID-cmid-often-closed-positions-onpz-cmid-often-closed-positions-onpz-module                       |  17.14 kB |                 3.91 kB
+410.977d54fc2320030c.js       | src-app-widgets-OZSM-ozsm-planning-main-ozsm-planning-main-module                                                   |  17.03 kB |                 3.12 kB
+8882.0e6bef775a89d891.js      | pages-configurator-configurator-module                                                                              |  17.01 kB |                 3.30 kB
+515.bb8bec3519f57471.js       | src-app-widgets-CD-cd-catalyst-cd-catalyst-module                                                                   |  17.00 kB |                 3.46 kB
+644.0ca79ffdacbbf135.js       | widgets-SUUTP-suutp-complexes-complexes-module                                                                      |  16.75 kB |                 3.37 kB
+8747.f9133cc7b7ae61a3.js      | src-app-widgets-CD-cd-quality-cd-quality-module                                                                     |  16.56 kB |                 3.94 kB
+2810.eec70ffff464ba32.js      | src-app-widgets-CD-cd-mnemoschema-research-cd-mnemoschema-research-module                                           |  16.46 kB |                 2.20 kB
+1131.1af0e8b4a88e4bb5.js      | src-app-widgets-EVJ-evj-accept-shift-evj-accept-shift-module                                                        |  16.44 kB |                 3.68 kB
+9196.3c0a7cea4a6852c1.js      | src-app-widgets-LCO-deviations-table-deviations-table-module                                                        |  16.42 kB |                 2.90 kB
+6130.e509753b159b4835.js      | src-app-widgets-LCO-truncated-diagram-percentage-truncated-diagram-percentage-module                                |  16.34 kB |                 2.97 kB
+6777.fb585c72de241ae6.js      | src-app-widgets-CD-cd-actions-research-cd-actions-research-module                                                   |  16.13 kB |                 3.41 kB
+2295.04ab7c664b908a27.js      | widgets-CMID-cmid-number-of-outages-cmid-number-of-outages-module                                                   |  16.09 kB |                 3.89 kB
+2177.8acd4d02085904c1.js      | src-app-widgets-LCO-bar-chart-bar-charts-bar-charts-module                                                          |  15.80 kB |                 2.90 kB
+9111.3df97bc55254687f.js      | pages-dashboard-dashboard-module                                                                                    |  15.72 kB |                 3.07 kB
+304.6edd6fd6048e84e7.js       | widgets-EVJ-cup-quality-cup-quality-module                                                                          |  15.71 kB |                 3.69 kB
+9022.0e882e855b96a347.js      | src-app-widgets-LCO-column-chart-stacked-column-chart-stacked-module                                                |  15.64 kB |                 2.90 kB
+1657.257e4d78ed8e48af.js      | src-app-widgets-OZSM-ozsm-shared-ozsm-resources-circle-diagram-ozsm-resources-circle-diagram-module                 |  15.53 kB |                 3.26 kB
+285.952c6f464b3ea6e4.js       | src-app-widgets-LCO-widgets-pie-widget-pies-widget-pies-module                                                      |  15.23 kB |                 2.83 kB
+618.8c734a1b5a5974f1.js       | widgets-CMID-cmid-overall-operational-indicator-cmid-overall-operational-indicator-module                           |  15.20 kB |                 4.11 kB
+1351.79e7d5511104817e.js      | src-app-widgets-LCO-suspense-machine-suspense-machine-module                                                        |  14.93 kB |                 2.37 kB
+6692.2996c5cc2520013e.js      | src-app-widgets-CMID-cmid-system-attr-suutp-cmid-system-attr-suutp-module                                           |  14.78 kB |                 3.40 kB
+90.51d305289cab59f7.js        | src-app-widgets-EVJ-evj-production-unit-select-panel-evj-production-unit-select-panel-module                        |  14.66 kB |                 3.45 kB
+3724.d4b47bedc5ddcac1.js      | src-app-widgets-OZSM-ozsm-main-indicators-ozsm-main-indicators-module                                               |  14.66 kB |                 3.02 kB
+1085.fe3bb06d90184635.js      | src-app-widgets-LCO-map-ecology-map-ecology-module                                                                  |  14.57 kB |                 2.91 kB
+5860.441aecdc758aa6bc.js      | src-app-widgets-LCO-calendar-plan-calendar-plan-module                                                              |  14.45 kB |                 2.42 kB
+8395.7d1ff48ab6ac1678.js      | src-app-widgets-EJCO-ONPZ-ejco-onpz-unit-sou-ejco-onpz-unit-sou-module                                              |  14.24 kB |                 3.71 kB
+3793.cfc49d2fdb8bd8d5.js      | src-app-widgets-OZSM-ozsm-line-diagrams-ozsm-line-diagrams-module                                                   |  14.21 kB |                 3.29 kB
+8008.eb577d0d259ca657.js      | pages-dashboard-dashboard-module                                                                                    |  14.20 kB |                 3.14 kB
+4509.24664822a6f233ca.js      | src-app-widgets-NK-nk-tank-information-nk-tank-information-module                                                   |  14.17 kB |                 4.37 kB
+7415.ae2879950e376922.js      | widgets-CMID-cmid-number-of-outages-cmid-number-of-outages-module                                                   |  14.15 kB |                 3.32 kB
+9759.46f0710c84877faf.js      | src-app-widgets-LCO-circle-block-diagram-circle-block-diagram-module                                                |  13.97 kB |                 2.45 kB
+4368.fe572c1f9eb91956.js      | widgets-CMID-cmid-dynamics-of-metrics-change-cmid-dynamics-of-metrics-change-module                                 |  13.91 kB |                 3.35 kB
+8401.6a7e8e4596006bd4.js      | src-app-widgets-CMID-MSK-cmid-pid-industrial-automation-msk-cmid-pid-industrial-automation-msk-module               |  13.85 kB |                 3.25 kB
+7018.407b7e817b695331.js      | src-app-widgets-NK-tank-information-tank-information-module                                                         |  13.82 kB |                 2.41 kB
+2392.f4e83f46f6188312.js      | src-app-widgets-LCO-deviation-circle-diagram-deviation-circle-diagram-module                                        |  13.81 kB |                 2.56 kB
+691.f958ff6d32635534.js       | src-app-widgets-CMID-MSK-cmid-gas-control-system-skz-msk-cmid-gas-control-system-skz-msk-module                     |  13.70 kB |                 3.11 kB
+6161.3d6ac55c09af96a1.js      | src-app-widgets-ED-dispatcher-screen-dispatcher-screen-module                                                       |  13.57 kB |                 3.33 kB
+3524.028a25aa7c9ef44d.js      | src-app-widgets-LCO-circle-factory-diagram-circle-factory-diagram-module                                            |  13.40 kB |                 2.78 kB
+3989.43a922912277d226.js      | src-app-widgets-LCO-time-line-diagram-time-line-diagram-module                                                      |  13.30 kB |                 2.52 kB
+2087.de524c44a13951af.js      | src-app-widgets-OZSM-ozsm-diagrams-widget-ozsm-diagrams-widget-module                                               |  13.29 kB |                 2.00 kB
+7785.2349493b8954390c.js      | src-app-widgets-CMID-cmid-gas-control-system-skz-cmid-gas-control-system-skz-module                                 |  13.25 kB |                 2.99 kB
+409.3d526b4c02b8a647.js       | bootstrap                                                                                                           |  13.19 kB |                 3.93 kB
+1948.54b219b26259870e.js      | src-app-widgets-NK-oil-operations-oil-operations-module                                                             |  13.16 kB |                 3.31 kB
+371.ddf98f286af726e3.js       | src-app-widgets-admin-admin-report-server-configurator-admin-report-server-configurator-module                      |  12.71 kB |                 3.41 kB
+3747.103fa2bb53b9dfbb.js      | src-app-widgets-CMID-cmid-close-reason-onpz-cmid-close-reason-onpz-module                                           |  12.67 kB |                 2.94 kB
+8802.b8e267aba403ec4a.js      | src-app-widgets-LCO-ecology-safety-ecology-safety-module                                                            |  12.62 kB |                 2.33 kB
+3162.f9cdc9f63a20cbdb.js      | src-app-widgets-NK-oil-operations-oil-operations-module                                                             |  12.53 kB |                 3.25 kB
+4462.ff8cb0fadd775e50.js      | src-app-widgets-LCO-ring-energy-indicator-ring-energy-indicator-module                                              |  12.46 kB |                 2.54 kB
+7358.08b15d205cdd287f.js      | widgets-CMID-MSK-cmid-electric-heating-system-msk-cmid-electric-heating-system-msk-module                           |  12.20 kB |                 2.68 kB
+10.ee10b32de2e05f23.js        | widgets-CMID-cmid-dynamic-equipment-cmid-dynamic-equipment-module                                                   |  12.10 kB |                 2.58 kB
+2353.5eb00d11a3b92a87.js      | src-app-widgets-CD-cd-mode-cd-mode-module                                                                           |  12.02 kB |                 2.83 kB
+3500.f40d09be0ebb793d.js      | src-app-widgets-CMID-MSK-cmid-paz-close-reason-msk-cmid-paz-close-reason-msk-module                                 |  11.70 kB |                 2.88 kB
+9818.cee38e193f587647.js      | src-app-widgets-NK-nk-onpz-kipo-nk-onpz-pasportplan-nk-onpz-pasportplan-module                                      |  11.41 kB |                 3.02 kB
+4935.bc2394bb55b7dcaa.js      | src-app-widgets-CMID-cmid-close-reason-cmid-close-reason-module                                                     |  11.40 kB |                 2.76 kB
+1749.2bef0b0403ea8b0d.js      | bootstrap                                                                                                           |  11.13 kB |                 3.00 kB
+811.75d08f1840133585.js       | src-app-widgets-NK-nk-manual-input-operations-sm-nk-manual-input-operations-sm-module                               |  11.11 kB |                 2.79 kB
+3220.8c5ccf9012c01a56.js      | pages-dashboard-dashboard-module                                                                                    |  11.11 kB |                 3.10 kB
+3525.f1ee421057348f61.js      | widgets-CD-cd-mat-balance-research-cd-mat-balance-research-module                                                   |  11.04 kB |                 3.32 kB
+5464.b40565d3953ad2f1.js      | src-app-widgets-CD-cd-model-comparison-cd-model-comparison-module                                                   |  10.96 kB |                 2.62 kB
+1273.05a90731e512926c.js      | src-app-widgets-EJCO-ONPZ-ejco-onpz-unit-sou-ejco-onpz-unit-sou-module                                              |  10.36 kB |                 2.29 kB
+375.3350578490854966.js       | src-app-widgets-NK-nk-onpz-kipo-nk-onpz-planshipment-nk-onpz-planshipment-module                                    |  10.17 kB |                 2.87 kB
+6908.ec10f4311c7f160b.js      | src-app-widgets-LCO-circle-diagram-circle-diagram-module                                                            |   9.91 kB |                 2.07 kB
+2128.7881c804e62bd8d7.js      | src-app-widgets-others-unity-template-unity-template-module                                                         |   9.89 kB |                 2.13 kB
+2513.0835ec5db850bf77.js      | widgets-EVJ-evj-order-events-evj-order-events-module                                                                |   9.59 kB |                 2.66 kB
+8902.5b018538fb65374a.js      | widgets-CMID-cmid-operational-readiness-cmid-operational-readiness-module                                           |   9.54 kB |                 2.20 kB
+4756.248b91fe5fdb7d55.js      | src-app-widgets-NK-nk-onpz-kipo-nk-onpz-oilfacttank-nk-onpz-oilfacttank-module                                      |   9.50 kB |                 2.68 kB
+3720.7ca5472a6d80a5bb.js      | src-app-widgets-CMID-cmid-often-closed-positions-suutp-cmid-often-closed-positions-suutp-module                     |   9.43 kB |                 2.29 kB
+1813.a8e663ac612f6d46.js      | src-app-widgets-EVJ-evj-current-shift-evj-current-shift-module                                                      |   9.32 kB |                 2.29 kB
+2314.d3a7dfd56e617943.js      | src-app-widgets-OZSM-ozsm-main-toggle-ozsm-main-toggle-module                                                       |   9.23 kB |                 2.12 kB
+8146.e7924e26cfd8cf1c.js      | src-app-widgets-NK-nk-onpz-kipo-nk-onpz-factshipment-nk-onpz-factshipment-module                                    |   9.08 kB |                 2.60 kB
+4505.9c70221e6d8d2483.js      | src-app-widgets-LCO-legend-zpk-legend-zpk-module                                                                    |   8.64 kB |                 1.90 kB
+9043.4801ac8f7dd25f66.js      | src-app-widgets-others-iframe-widget-iframe-widget-module                                                           |   8.47 kB |                 2.19 kB
+7833.65c80322b64a1085.js      | src-app-widgets-EVJ-evj-accept-shift-evj-accept-shift-module                                                        |   8.39 kB |                 1.98 kB
+169.30238d3880ef3cd3.js       | src-app-widgets-LCO-operation-efficiency-operation-efficiency-module                                                |   8.13 kB |                 1.59 kB
+5481.6c587d5347c746f6.js      | src-app-widgets-EJCO-ONPZ-ejco-onpz-fsb-load-ejco-onpz-fsb-load-module                                              |   7.48 kB |                 1.74 kB
+3438.4f43c3036f7cf5fd.js      | src-app-widgets-LCO-cd-critical-cd-critical-module                                                                  |   7.42 kB |                 1.68 kB
+2338.86dcee38da25913e.js      | src-app-widgets-NK-nk-manual-input-operations-sm-nk-manual-input-operations-sm-module                               |   7.13 kB |                 1.90 kB
+6484.e25b69239c3e103c.js      | src-app-widgets-others-flame-diagram-flame-diagram-module                                                           |   7.13 kB |                 1.41 kB
+6332.fdcbd0afc2560edd.js      | src-app-widgets-CVTR-cvtr-izomalk-cvtr-izomalk-module                                                               |   7.09 kB |                 1.69 kB
+196.60ca74f75a2658d2.js       | src-app-widgets-CVTR-cvtr-home-cvtr-home-module                                                                     |   7.08 kB |                 1.69 kB
+167.9a8ab47386db7e38.js       | src-app-widgets-OQ-oq-oil-quality-oq-oil-quality-module                                                             |   7.05 kB |                 1.69 kB
+5742.5dabc3deee287e85.js      | widgets-CMID-MSK-cmid-dynamics-indicators-skz-msk-cmid-dynamics-indicators-skz-msk-module                           |   6.86 kB |                 2.03 kB
+426.125b36e1f17b3b99.js       | widgets-CMID-cmid-overall-operational-indicator-skz-cmid-overall-operational-indicator-skz-module                   |   6.71 kB |                 2.00 kB
+1696.8472ddedd3cd1cd6.js      | widgets-CMID-MSK-cmid-pid-dynamics-indicators-msk-cmid-pid-dynamics-indicators-msk-module                           |   6.67 kB |                 2.04 kB
+9334.799a736a1c89f999.js      | src-app-widgets-EJCO-ONPZ-ejco-onpz-unit-kpe-ejco-onpz-unit-kpe-module                                              |   6.32 kB |                 1.76 kB
+2738.b20db79c501b081b.js      | widgets-CMID-cmid-overall-operational-indicator-onpz-cmid-overall-operational-indicator-onpz-module                 |   6.30 kB |                 1.91 kB
+521.ce5ac4b5164d26f7.js       | widgets-CMID-MSK-cmid-dynamics-indicators-heating-msk-cmid-dynamics-indicators-heating-msk-module                   |   6.24 kB |                 1.97 kB
+4832.a5a609b2963c03e8.js      | widgets-CMID-MSK-cmid-paz-dynamics-of-metrics-change-msk-cmid-paz-dynamics-of-metrics-change-msk-module             |   5.12 kB |                 1.59 kB
+443.48dacada1fd22a8b.js       | src-app-widgets-NK-nk-shipment-operations-nk-shipment-operations-module                                             |   5.05 kB |                 1.42 kB
+9736.e790632501be3a88.js      | src-app-widgets-NK-document-coding-document-coding-module                                                           |   4.89 kB |               769 bytes
+339.4b34b64ecf7d094d.js       | widgets-EVJ-evj-escalated-events-evj-escalated-events-module                                                        |   3.95 kB |                 1.27 kB
+8107.defc552e38cb3db7.js      | pages-browser-support-browser-support-module                                                                        |   3.87 kB |                 1.25 kB
+7006.2223e2ca2e914ace.js      | pages-not-found-not-found-module                                                                                    |   2.71 kB |              1004 bytes
+1648.ab4ddac39f4c7c09.js      | src-app-widgets-EVJ-events-workspace-events-workspace-module                                                        |   1.60 kB |               696 bytes
+8274.2de23143f0de64b4.js      | src-app-widgets-EVJ-evj-events-workspace-evj-events-workspace-module                                                |   1.60 kB |               697 bytes
+7957.7c6de8dd1fb72f72.js      | pages-dashboard-dashboard-module                                                                                    | 730 bytes |               420 bytes
+153.2a9d681077454fb9.js       | -                                                                                                                   | 699 bytes |               345 bytes
+6860.78b1eed76d67ab11.js      | src-app-widgets-NK-oil-operations-oil-operations-module                                                             | 698 bytes |               274 bytes
+7314.ebb793e49054e1fa.js      | src-app-widgets-CD-cd-quality-cd-quality-module                                                                     | 412 bytes |               259 bytes
+| -                                                                                                                   |   0 bytes |                       -
+| -                                                                                                                   |   0 bytes |                       -
+Build at: 2024-12-11T07:34:04.601Z - Hash: fbf176caea591af8 - Time: 227655ms
+Warning: bundle initial exceeded maximum budget. Budget 2.00 MB was not met by 3.26 MB with a total of 5.26 MB.
+set +v
+
+Saving cache for successful job
+00:40
+Creating cache develop-11...
+node_modules/: found 169008 matching files and directories 
+Uploading cache.zip to http://192.168.0.16:9000/gitlab-runner/project/25/develop-11 
+Created cache
+
+Uploading artifacts for successful job
+00:08
+Uploading artifacts...
+./dist: found 3165 matching files and directories  
+Uploading artifacts as "archive" to coordinator... ok  id=445187 responseStatus=201 Created token=a3VWuW5k
+
+Cleaning up file based variables
+00:00
+Job succeeded

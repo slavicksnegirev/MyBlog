@@ -1,0 +1,22 @@
+FROM registry.as-team.space/devops/nginx-118-rhel:1.0.0
+
+USER 0
+
+ENV BASE_HREF=/ TITLE=AS-PLATFORM NON_ROOT_USER=1001 NON_ROOT_USER_GROUP=0
+
+ARG artifactSource="./dist/evj"
+ARG artifactDestination="/usr/share/nginx/html"
+ARG entryPointSh="./ci/scripts/entryPoint.sh"
+COPY --chown=${NON_ROOT_USER}:${NON_ROOT_USER_GROUP} $artifactSource $artifactDestination
+# COPY --chown=${NON_ROOT_USER}:${NON_ROOT_USER} ./ci/nginx.okd.conf  /opt/app-root/etc/nginx.d/nginx.conf
+COPY --chown=${NON_ROOT_USER}:${NON_ROOT_USER_GROUP} $entryPointSh  /
+RUN mkdir -p /var/lib/nginx/tmp /var/log/nginx \
+    && chown -R ${NON_ROOT_USER}:${NON_ROOT_USER_GROUP} /var/lib/nginx /var/log/nginx \
+    && chmod -R 775 /var/lib/nginx /var/log/nginx /entryPoint.sh /usr/share/nginx/html \
+    && chown -R ${NON_ROOT_USER}:${NON_ROOT_USER_GROUP} /usr/share/nginx/html  /entryPoint.sh
+RUN ln -sf /dev/stdout /var/log/nginx/access.log \
+    && ln -sf /dev/stderr /var/log/nginx/error.log
+USER ${NON_ROOT_USER}
+EXPOSE 4200
+ENTRYPOINT ["sh","/entryPoint.sh"]
+CMD ["nginx", "-g", "daemon off;"]
