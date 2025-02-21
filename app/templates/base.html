@@ -64,5 +64,61 @@
     </script>
     {{ moment.include_moment() }}
     {{ moment.lang(g.locale) }}
+    <script>
+      async function translate(sourceElem, destElem, sourceLang, destLang) {
+        // Проверяем, существуют ли элементы
+        const sourceElement = document.getElementById(sourceElem);
+        const destElement = document.getElementById(destElem);
+    
+        if (!sourceElement || !destElement) {
+          console.error('Один из элементов не найден:', { sourceElem, destElem });
+          return;
+        }
+    
+        try {
+          // Показываем индикатор загрузки
+          destElement.innerHTML = '<img src="/static/loading.gif" alt="Loading..." />';
+    
+          // Получаем текст из источника
+          const sourceText = sourceElement.innerText.trim();
+          if (!sourceText) {
+            destElement.innerText = 'Нет текста для перевода';
+            return;
+          }
+    
+          // Отправляем запрос на сервер
+          const response = await fetch('/translate', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json; charset=utf-8',
+            },
+            body: JSON.stringify({
+              text: sourceText,
+              source_language: sourceLang,
+              dest_language: destLang,
+            }),
+          });
+    
+          // Проверяем успешность ответа
+          if (!response.ok) {
+            throw new Error(`Ошибка HTTP: ${response.status}`);
+          }
+    
+          // Обрабатываем полученные данные
+          const data = await response.json();
+          
+          // Проверяем наличие текста в ответе
+          if (!data || !data.text) {
+            throw new Error('Пустой или некорректный ответ от сервера');
+          }
+    
+          // Выводим переведённый текст
+          destElement.innerText = data.text;
+        } catch (error) {
+          console.error('Ошибка перевода:', error);
+          destElement.innerText = 'Ошибка при переводе';
+        }
+      }
+    </script>
   </body>
 </html>
